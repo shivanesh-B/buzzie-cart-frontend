@@ -1,10 +1,31 @@
- # https://buzzie-cart-frontend.vercel.app <-- Click this to redirect to my WebPage :)
- # buzzie-cart-frontend Created by shivanesh
+Sure! Here is the entire content in one block for you to copy:
 
-To Run this website, Download both Frontend and Backend folder Then edit the following in ".env" file
+---
 
-Requirements to install:
-npm install (install seperatly in both frontend and backend folder)
+```markdown
+# [Buzzie Cart Frontend](https://buzzie-cart-frontend.vercel.app)  
+**Click this to redirect to my WebPage :)**
+
+## buzzie-cart-frontend Created by Shivanesh
+
+### To Run this Website:
+
+1. Download both **Frontend** and **Backend** folders.  
+2. Edit the following in the `.env` files.
+
+---
+
+### Requirements to Install:
+
+In both **Frontend** and **Backend** folders separately, run:
+
+```bash
+npm install
+```
+
+Also, install the following dependencies:
+
+```bash
 npm i mongoose
 npm i mongodb
 npm i cloudinary
@@ -13,40 +34,93 @@ npm i jsonwebtoken
 npm i react
 npm i react-dom
 npm i react-router-dom
+```
 
-To run the Frontend: npm run dev
-To run the Backend: npm run start:dev
+---
 
-## Frontend .env file: (.env.local)
+### To Run the Frontend:
 
-VITE_STRIPE_PK="Here you need to configure your own stripe Publishable key"
+```bash
+npm run dev
+```
 
-Refer Stripe docs : https://docs.stripe.com/payments?payments=popular
+### To Run the Backend:
 
-## Backend .env file:
+```bash
+npm run start:dev
+```
 
-then create account in mangoDB and create a database. then copy paste your database URL with you password in DB_URL
+---
 
-Then for "JWT_SECRET_KEY" run the below code
+## Frontend `.env` file: (`.env.local`)
+
+```bash
+VITE_STRIPE_PK="Your Stripe Publishable Key"
+```
+
+Refer to the [Stripe documentation](https://docs.stripe.com/payments?payments=popular) to configure your key.
+
+---
+
+## Backend `.env` file:
+
+1. Create an account on **MongoDB** and create a database.  
+2. Copy your **database URL** with your password into `DB_URL`.
+
+### For `JWT_SECRET_KEY`, generate a key by running:
+
+```bash
 $ node
 > require('crypto').randomBytes(32).toString('hex')
-some random key will generate. paste it in the JWT_SECRET_KEY section
+```
 
-for STRIPE_SECRET_KEY, just go to strip dashboard and copy paste your seceret key
+This will generate a random key. Paste it into the `JWT_SECRET_KEY` field.
 
-CLOUDINARY_CLOUD_NAME
-CLOUDINARY_API_KEY
-CLOUDINARY_API_SECRET
-for these above keys, create a account in cloudinary and get those api keys and cloud name.
+### For `STRIPE_SECRET_KEY`:
+- Go to your **Stripe Dashboard** and copy your secret key.
 
-push your project in github then use vercel website to deploy it
+### For **Cloudinary Keys**:
+- Create an account on **Cloudinary** and get the following keys:
+  - `CLOUDINARY_CLOUD_NAME`
+  - `CLOUDINARY_API_KEY`
+  - `CLOUDINARY_API_SECRET`
 
-after deploying it in frontend public/src/utils/baseURL.js --> change return "tour website homepage webaddress" for example 
+---
 
+## Deployment:
+
+1. Push your project to **GitHub**.  
+2. Use **Vercel** to deploy it.
+
+### After deployment:
+
+- In the frontend (`public/src/utils/baseURL.js`), change:
+
+```javascript
+export const getBaseUrl = () => {
+    return "https://your-backend-url.vercel.app";
+};
+```
+
+Example:
+
+```javascript
 export const getBaseUrl = () => {
     return "https://buzzie-backend-app.vercel.app";
-}
-the above BaseURL.js is mine...my webaddress is mentioned
+};
+```
 
-In index.js from backend folder chnge the 17th line: origin: 'https://buzzie-cart-frontend.vercel.app' ...with your webaddress
+- In the backend `index.js` file, change **line 17**:
 
+```javascript
+origin: 'https://your-frontend-url.vercel.app'
+```
+
+Example:
+
+```javascript
+origin: 'https://buzzie-cart-frontend.vercel.app';
+```
+```
+
+---
