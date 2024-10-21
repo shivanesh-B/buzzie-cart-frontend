@@ -47,8 +47,8 @@ const SingleProduct = () => {
                     <div className='md:w-1/2 w-full'>
                         <h3 className='text-2xl font-semibold mb-4'>{singleProduct?.name}</h3>
                         <p className='text-xl text-primary mb-4 space-x-1'>
-                            ${singleProduct?.price} 
-                             {singleProduct?.oldPrice && <s className='ml-1'>${singleProduct?.oldPrice}</s>}
+                        ₹{singleProduct?.price} 
+                             {singleProduct?.oldPrice && <s className='ml-1'>₹{singleProduct?.oldPrice}</s>}
                             </p>
                         <p className='text-gray-400 mb-4'>{singleProduct?.description}</p>
 
