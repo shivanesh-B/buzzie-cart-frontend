@@ -1,4 +1,4 @@
- # https://buzzie-cart-frontend.vercel.app <-- Click this to redirect to my WebPage
+ # https://buzzie-cart-frontend.vercel.app <-- Click this to redirect to my WebPage :)
  # buzzie-cart-frontend Created by shivanesh
 
 To Run this website, Download both Frontend and Backend folder Then edit the following in ".env" file
