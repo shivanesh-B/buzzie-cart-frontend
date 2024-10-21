@@ -2,7 +2,7 @@
 ---
 
 # [Buzzie Cart Frontend] https://buzzie-cart-frontend.vercel.app
-**Click this to redirect to my WebPage :)**
+**Click the above link to redirect to my WebPage :)**
 ```markdown
 ## buzzie-cart-frontend Created by Shivanesh
 
