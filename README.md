@@ -1,9 +1,8 @@
-Sure! Here is the entire content in one block for you to copy:
 
 ---
 
 ```markdown
-# [Buzzie Cart Frontend](https://buzzie-cart-frontend.vercel.app)  
+# [Buzzie Cart Frontend] https://buzzie-cart-frontend.vercel.app
 **Click this to redirect to my WebPage :)**
 
 ## buzzie-cart-frontend Created by Shivanesh
